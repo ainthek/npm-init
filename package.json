@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git@gitlab01.hq.gratex.com:marcus/npm-init.git"
   },
-  "bin" : { 
-    "npm-init-mocha" : "./bin/npm-init-mocha",
-    "npm-init-babel" : "./bin/npm-init-babel" 
+  "bin": {
+    "npm-init-mocha": "./bin/npm-init-mocha",
+    "npm-init-babel": "./bin/npm-init-babel"
   },
   "author": "marcus@gratex.com",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "json": "^9.0.3"
+  }
 }

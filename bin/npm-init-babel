@@ -18,6 +18,13 @@ end_of_es6build
 	}
 end_of_babelrc
 
+# REVIEW: path to json (local dependency)
+"${0%/*}/../node_modules/.bin/json" -I -f ./package.json -e '
+	this.scripts || (this.scripts={}); 
+	this.scripts.build || (this.scripts.build="bash ./_build/es6build.sh");
+'
+
+
 
 
  
