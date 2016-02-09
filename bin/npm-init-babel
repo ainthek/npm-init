@@ -1,0 +1,24 @@
+#!/bin/bash
+
+npm install --save-dev babel-cli
+npm install --save-dev babel-preset-es2015
+
+[ -d ./lib ] || mkdir ./lib
+[ -d ./src ] || mkdir ./src
+[ -d ./_build ] || mkdir ./_build
+[ -f ./_build/es6build.sh ] || tee es6build.sh <<- end_of_es6build
+	#!/bin/bash
+	./node_modules/.bin/babel  -d lib/ src/
+end_of_es6build
+
+[ -f ./.babelrc ] || tee ./.babelrc <<- end_of_babelrc
+	{
+	    "presets": ["babel-preset-es2015"],
+	    "auxiliaryCommentBefore": "BABEL INJECTED"
+	}
+end_of_babelrc
+
+
+
+ 
+
