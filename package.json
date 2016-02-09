@@ -12,7 +12,7 @@
   },
   "bin" : { 
     "npm-init-mocha" : "./bin/npm-init-mocha" 
-  }
-  "author": "",
+  },
+  "author": "marcus@gratex.com",
   "license": "ISC"
 }
