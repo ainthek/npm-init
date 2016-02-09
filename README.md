@@ -17,5 +17,7 @@ From now you can easily add new feature to your project:
 
 That is all.
 
-	
+## Links
 
+- <http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/>	
+- <https://github.com/gratex/node-boilerplate>
