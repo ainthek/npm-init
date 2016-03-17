@@ -24,6 +24,10 @@ From now you can easily add new feature to your project:
 	./node_modules/.bin/npm-init-mocha
 
 	...
+For easier workflow when developing init scripts 
+you may run bins directly from npm-init folder:
+
+ 	../npm-init/bin/npm-init-mocha
 
 That is all.
 

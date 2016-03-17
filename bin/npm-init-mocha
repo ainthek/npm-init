@@ -5,3 +5,7 @@ npm install --save-dev mocha
 [ -d ./test ] || mkdir test
 [ -f ./test/mocha.opts ] || echo "--reporter spec" > ./test/mocha.opts 
 
+"${0%/*}/../node_modules/.bin/json" -I -f ./package.json -e '
+	this.scripts || (this.scripts={}); 
+	this.scripts.test="mocha -t ./test";
+'
