@@ -9,11 +9,11 @@ See also <https://github.com/gratex/node-boilerplate> for another approach.
 Assuming you already have node project (`npm init`)
 	
 	# for consumers 
-	npm install --save-dev npm-init # path to git, or local folder of this repo
+	npm install --save-dev https://github.com/ainthek/npm-init.git # path to git, or local folder of this repo
 
 	# for contributors
 	cd ..
-	git clone git@gitlab01.hq.gratex.com:dojo/npm-init.git
+	git clone https://github.com/ainthek/npm-init.git
 
 	
 	npm install --save-dev ../npm-init
